@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_2"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textSize="25dp"
+        android:textColor="@color/darkBlue"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/darkBlue"
+        app:hintTextColor="@color/darkBlue"
+        app:boxStrokeColor="@color/darkBlue"
+        android:theme="@style/outlinedTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eteml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username/Email"
+            android:textColor="@color/darkBlue"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/outlinedTextField"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/darkBlue"
+        app:hintTextColor="@color/darkBlue"
+        app:boxStrokeColor="@color/darkBlue"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/darkBlue"
+        android:theme="@style/outlinedTextField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/darkBlue"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_btn"
+        android:layout_margin="25dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/btnlogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/cardview_default_radius"
+                android:layout_marginTop="@dimen/cardview_default_radius"
+                android:layout_marginEnd="@dimen/cardview_default_radius"
+                android:layout_marginBottom="@dimen/cardview_default_radius"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="#A1E7F8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/btngotologinreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_default_radius"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:layout_marginEnd="@dimen/cardview_default_radius"
+        android:layout_marginBottom="@dimen/cardview_default_radius"
+        android:gravity="center"
+        android:text="New user? Register here"
+        android:textColor="@color/darkBlue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
